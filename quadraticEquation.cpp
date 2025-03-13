@@ -32,4 +32,5 @@ int main()
         float doubleRoot = (-b) / (2 * a);
         std::cout<<"delta is '" << delta << "'. in this case there is one real root, called the double root, and is equal to: ("<<doubleRoot<<")";
     }
+    system("\npause");
 }
