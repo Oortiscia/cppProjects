@@ -2,7 +2,8 @@
 #include "cmath"
 int main()
 {
-    std::cout<<"this program is designed to receive the values of a,b,c and find the roots of the quadratic equation";
+    std::cout<<"this program is designed to receive the values of a,b,c and find the roots of the quadratic equation"<<std::endl
+             <<"please enter the required values\n";
 
     float a , b , c , delta;
 
@@ -11,8 +12,9 @@ int main()
 
     if (0 == a)
     {
-        std::cout<<"the value of 'a' cannot be set to zero. in that case the equation will be linear.\n";
-        system("pause");
+        std::cout<<"the value of 'a' cannot be set to zero. in that case the equation will be linear."<<std::endl
+                 <<"press enter to exit the program";
+        system("pause >nul");
         return 0;
     }
 
@@ -31,7 +33,9 @@ int main()
     else
     {
         float doubleRoot = (-b) / (2 * a);
-        std::cout<<"delta is '" << delta << "'. in this case there is one real root, called the double root, and is equal to: ("<<doubleRoot<<")\n";
+        std::cout<<"delta is '" << delta << "'. in this case there is one real root, called the double root, and is equal to:  "<<doubleRoot<<"\n";
     }
-    system("pause");
+    std::cout<<"press enter to finish the program";
+    system("pause >nul");
+
 }
