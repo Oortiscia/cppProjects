@@ -25,15 +25,15 @@ int main()
         float x1,x2;
         x1 = ((-b) + sqrt(delta)) / (2*a);
         x2 = ((-b) - sqrt(delta)) / (2*a);
-        std::cout<<"there are two real roots for this quadratic equation."<<"\n\tx1 is: "<<x1<<"\n\tx2 is: "<<x2<<"\n";
+        std::cout<<"\ndelta is: "<<delta<<std::endl<<"there are two real roots for this quadratic equation."<<"\n\tx1 is: "<<x1<<"\n\tx2 is: "<<x2<<"\n";
     }
 
     else if (delta < 0)
-        std::cout<<"delta is " <<delta<< " .there are no real roots for this equation\n";
+        std::cout<<"\ndelta is " <<delta<< " .there are no real roots for this equation\n";
     else
     {
         float doubleRoot = (-b) / (2 * a);
-        std::cout<<"delta is '" << delta << "'. in this case there is one real root, called the double root, and is equal to:  "<<doubleRoot<<"\n";
+        std::cout<<"\ndelta is '" << delta << "'. in this case there is one real root, called the double root, and is equal to:  "<<doubleRoot<<"\n";
     }
     std::cout<<"press enter to finish the program";
     system("pause >nul");
